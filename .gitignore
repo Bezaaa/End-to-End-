@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+*.pkl
+*.joblib
+
+# Environments
+env/
+venv/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Data
+*.csv
+*.xlsx
+*.json
+data/
+!data/README.md  # keep a README if needed
+
+# DVC cache (later)
+.dvc/
+.dvc/cache/
+
+# OS
+.DS_Store
+Thumbs.db
