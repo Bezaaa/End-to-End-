@@ -1,33 +1,49 @@
-# Python
+# ----------------------------
+# Python files & cache
+# ----------------------------
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints
 *.pkl
 *.joblib
 
-# Environments
+# ----------------------------
+# Jupyter Notebook
+# ----------------------------
+.ipynb_checkpoints/
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
 env/
 venv/
 .venv/
 
-# Jupyter Notebook
-.ipynb_checkpoints/
-
+# ----------------------------
 # VS Code
+# ----------------------------
 .vscode/
 *.code-workspace
 
-# Data
-*.csv
-*.xlsx
-*.json
-data/
-!data/README.md  # keep a README if needed
-
-# DVC cache (later)
+# ----------------------------
+# DVC & data files
+# ----------------------------
 .dvc/
 .dvc/cache/
 
-# OS
+# Ignore raw data files
+*.csv
+*.xlsx
+*.json
+
+# Ignore the whole data folder...
+data/
+
+# ...but allow DVC tracking files and documentation inside
+!data/*.dvc
+!data/README.md
+
+# ----------------------------
+# OS generated files
+# ----------------------------
 .DS_Store
 Thumbs.db
